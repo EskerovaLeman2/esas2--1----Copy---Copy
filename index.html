@@ -1,0 +1,925 @@
+<!doctype html>
+<html lang="az">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="BDRNK — Bakı Dövlət Rabitə və Nəqliyyat Kolleci. Rəsmi təhsil portalı: rəhbərlik, tədris, kitabxana, videodərslər, tələbə portalı." />
+    <meta name="keywords"
+        content="BDRNK, Bakı Dövlət Rabitə və Nəqliyyat Kolleci, təhsil, kolec, Baku college, rabitə, nəqliyyat" />
+    <meta name="author" content="LJ" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="BDRNK — Bakı Dövlət Rabitə və Nəqliyyat Kolleci" />
+    <meta property="og:description"
+        content="Rəsmi təhsil portalı — rəhbərlik, kitabxana, videodərslər və tələbə portalı." />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#FFFFFF" />
+    <title>BDRNK — Bakı Dövlət Rabitə və Nəqliyyat Kolleci</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@700;800;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- ═══ NOISE GRAIN OVERLAY ═══ -->
+    <div class="noise-overlay" aria-hidden="true"></div>
+
+
+    <!-- ═══ PRELOADER ═══ -->
+    <div id="preloader" class="preloader">
+        <div class="preloader-inner">
+            <img src="logo.jpg" alt="BDRNK Logo" class="preloader-logo" />
+            <div class="preloader-spinner"></div>
+        </div>
+    </div>
+
+    <!-- ═══ SCENE TRANSITION OVERLAY ═══ -->
+    <div class="scene-transition" id="scene-transition">
+        <div class="st-content">
+            <div class="st-logo">
+                <img src="logo.jpg" alt="Logo" class="st-logo-img" />
+            </div>
+            <div class="st-progress"></div>
+        </div>
+    </div>
+
+
+
+    <!-- ═══════════════ HEADER ═══════════════ -->
+    <header class="site-header" id="site-header">
+        <div class="header-inner">
+            <a href="#hero" class="logo-group">
+                <div class="logo-icon">
+                    <img src="logo.jpg" alt="BDRNK Logo" class="header-logo-img" />
+                </div>
+                <div>
+                    <h1 class="logo-title">BDRNK</h1>
+                    <p class="logo-subtitle" data-i18n="header_subtitle">
+                        Bakı Dövlət Rabitə və Nəqliyyat Kolleci
+                    </p>
+                </div>
+            </a>
+
+            <nav class="header-nav" id="desktop-nav" aria-label="Əsas naviqasiya">
+                <a href="#hero" class="nav-link" data-i18n="nav_home">Ana Səhifə</a>
+                <a href="#about" class="nav-link" data-i18n="nav_about">Haqqımızda</a>
+                <a href="#news" class="nav-link" data-i18n="nav_news">Xəbərlər</a>
+                <a href="#structure" class="nav-link" data-i18n="nav_structure">Struktur</a>
+                <a href="#library" class="nav-link" data-i18n="nav_library">Kitabxana</a>
+                <a href="#lectures" class="nav-link" data-i18n="nav_lectures">Videodərslər</a>
+
+                <a href="#contact" class="nav-link" data-i18n="nav_contact">Əlaqə</a>
+                <a href="#gallery" class="nav-link" data-i18n="nav_gallery">Qalereya</a>
+            </nav>
+
+            <div class="header-actions">
+                <!-- Theme Multi-Switcher -->
+                <div class="theme-switcher-wrap">
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Temanı Dəyiş">
+                        <svg class="sun-and-moon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
+                            <circle class="sun" cx="12" cy="12" r="6" fill="currentColor" mask="url(#moon-mask)" />
+                            <g class="sun-beams" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                                <line x1="12" y1="1" x2="12" y2="3" />
+                                <line x1="12" y1="21" x2="12" y2="23" />
+                                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                                <line x1="1" y1="12" x2="3" y2="12" />
+                                <line x1="21" y1="12" x2="23" y2="12" />
+                                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                            </g>
+                            <mask class="moon" id="moon-mask">
+                                <rect x="0" y="0" width="100%" height="100%" fill="white" />
+                                <circle cx="24" cy="10" r="6" fill="black" />
+                            </mask>
+                        </svg>
+                    </button>
+                    <div class="theme-dropdown">
+                        <button data-theme-set="light"><span>☀️</span> Gündüz</button>
+                        <button data-theme-set="dark"><span>🌙</span> Gecə</button>
+                        <button data-theme-set="space"><span>🌌</span> Deep Space</button>
+                    </div>
+                </div>
+                <!-- Language Orb -->
+                <div class="lang-switcher" id="lang-switcher">
+                    <button class="lang-btn active" data-lang="az">AZ</button>
+                    <button class="lang-btn" data-lang="ru">RU</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+                <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Menyu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ═══ MOBILE NAV ═══ -->
+    <div class="mobile-nav-overlay" id="mobile-nav">
+        <nav class="mobile-nav-inner">
+            <a href="#hero" class="mobile-nav-link" data-i18n="nav_home">Ana Səhifə</a>
+            <a href="#about" class="mobile-nav-link" data-i18n="nav_about">Haqqımızda</a>
+            <a href="#news" class="mobile-nav-link" data-i18n="nav_news">Xəbərlər</a>
+            <a href="#structure" class="mobile-nav-link" data-i18n="nav_structure">Struktur</a>
+            <a href="#library" class="mobile-nav-link" data-i18n="nav_library">Kitabxana</a>
+            <a href="#lectures" class="mobile-nav-link" data-i18n="nav_lectures">Videodərslər</a>
+
+            <a href="#contact" class="mobile-nav-link" data-i18n="nav_contact">Əlaqə</a>
+            <a href="#gallery" class="mobile-nav-link" data-i18n="nav_gallery">Qalereya</a>
+        </nav>
+    </div>
+
+    <!-- ═══════════════ HERO — ANTIGRAVITY MOTION ═══════════════ -->
+    <section class="hero" id="hero">
+        <div class="hero-grain"></div>
+        <canvas id="flux-canvas"></canvas>
+        <div class="glass-shape float-1"></div>
+        <div class="glass-shape float-2"></div>
+        <canvas id="particles-canvas"></canvas>
+        <div class="hero-glow"></div>
+        <div class="hero-content">
+            <span class="hero-badge" data-i18n="hero_badge">Rəsmi Təhsil Portalı</span>
+            <h2 class="hero-title" data-i18n="hero_title">
+                AZƏRBAYCAN RESPUBLİKASI ELM VƏ TƏHSİL NAZİRLİYİ<br />
+                ELM VƏ ALİ TƏHSİL ÜZRƏ DÖVLƏT AGENTLİYİ<br />
+                AZƏRBAYCAN TEXNİKİ UNİVERSİTETİNİN NƏZDİNDƏ<br />
+                BAKI DÖVLƏT RABİTƏ VƏ NƏQLİYYAT KOLLECİ<br />
+                PUBLİK HÜQUQİ ŞƏXSİ
+            </h2>
+            <p class="hero-desc" data-i18n="hero_desc">
+                Gələcəyin rabitə və nəqliyyat mütəxəssislərini yetişdirən müasir
+                təhsil mərkəzi.
+            </p>
+            <div class="hero-cta">
+
+                <a href="#about" class="btn btn-outline" data-i18n="hero_cta_about">Haqqımızda</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="154">0</span>
+                    <span class="stat-label" data-i18n="stat_teachers">Müəllim</span>
+                </div>
+                <div class="stat-item main-stat">
+                    <span class="stat-number" data-target="95">0</span>
+                    <span class="stat-label" data-i18n="stat_years">İl Təcrübə</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="92">0</span>
+                    <span class="stat-label" data-i18n="stat_staff">Digər işçilər</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════ ABOUT ═══════════════ -->
+    <section class="section" id="about">
+        <div class="section-inner reveal">
+            <span class="section-badge" data-i18n="about_badge">Missiyamız</span>
+            <h2 class="section-title" data-i18n="about_title">Haqqımızda</h2>
+            <div class="bento-grid">
+                <!-- Bento Cell 1: Main Introduction (Large) -->
+                <div class="bento-cell bento-large reveal visible">
+                    <div class="bento-content">
+                        <div class="bento-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                                <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                            </svg>
+                        </div>
+                        <h3 data-i18n="about_p1_title" style="margin-bottom: 12px; font-size: 1.4rem">
+                            Gələcəyin Mütəxəssisləri
+                        </h3>
+                        <p data-i18n="about_p1">
+                            Bakı Dövlət Rabitə və Nəqliyyat Kolleci Azərbaycanda orta
+                            ixtisas təhsili pilləsi üzrə fəaliyyət göstərən ən qocaman və
+                            zəngin ənənələrə malik təhsil müəssisələrindən biridir. Kollecin
+                            yaranma tarixi 1923-cü ilə təsadüf edir. Həmin tarixdən etibarən
+                            müəssisə müxtəlif adlar altında fəaliyyət göstərərək
+                            respublikanın rabitə və nəqliyyat sektorları üçün minlərlə
+                            ixtisaslı kadr hazırlamışdır.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Bento Cell 2: Feature 1 (Medium) -->
+                <div class="bento-cell reveal visible" style="transition-delay: 0.1s">
+                    <div class="bento-content">
+                        <div class="bento-icon outline">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="3" width="20" height="14" rx="2" />
+                                <line x1="8" y1="21" x2="16" y2="21" />
+                                <line x1="12" y1="17" x2="12" y2="21" />
+                            </svg>
+                        </div>
+                        <h4 data-i18n="feature2_title">Rəqəmsal Laboratoriya</h4>
+                        <p data-i18n="feature2_desc">
+                            Son texnologiya ilə təchiz olunmuş laboratoriyalar
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Bento Cell 3: Feature 2 (Medium) -->
+                <div class="bento-cell reveal visible" style="transition-delay: 0.2s">
+                    <div class="bento-content">
+                        <div class="bento-icon outline">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <line x1="2" y1="12" x2="22" y2="12" />
+                                <path
+                                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                            </svg>
+                        </div>
+                        <h4 data-i18n="feature3_title">Tədbirlər</h4>
+                        <p data-i18n="feature3_desc">
+                            Kollecdə baş tutan ən son tədbirlər və yeniliklər
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Bento Cell 4: Methods (Wide) -->
+                <div class="bento-cell bento-wide reveal visible" style="transition-delay: 0.3s">
+                    <div class="bento-content">
+                        <h4 data-i18n="feature1_title" style="margin-bottom: 8px">
+                            Müasir Tədris Metodları
+                        </h4>
+                        <p data-i18n="about_p2">
+                            Hazırda kollecdə tədris prosesi müasir beynəlxalq standartlara uyğun, rəqəmsal
+                            texnologiyalar və praktiki
+                            təcrübə əsasında qurulmuşdur. Tələbələrimiz ən son laboratoriya avadanlıqları ilə təchiz
+                            olunmuş mühitdə
+                            gələcəyin peşəkarı kimi yetişirlər.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Bento Cell 5: History (Large or Wide) -->
+                <div class="bento-cell bento-large reveal visible" style="transition-delay: 0.4s">
+                    <div class="bento-content">
+                        <div class="bento-icon outline">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 8v4l3 3" />
+                                <circle cx="12" cy="12" r="9" />
+                            </svg>
+                        </div>
+                        <h3 data-i18n="about_history_title" style="margin-bottom: 12px; font-size: 1.4rem"> Tarixi </h3>
+                        <p data-i18n="about_history_text">
+                            Kollecin əsası 1931-ci ildə mərkəzi teleqrafın nəzdində fabrik-zavod təhsili bazasında
+                            təşkil olunmuşdur.
+                            Sonradan keçmiş SSRİ Rabitə Nazirliyinin 157 saylı 02.04.1991-ci il tarixli əmrinə əsasən
+                            Bakı Rabitə
+                            Kolleci yaradılmışdır. Bakı Rabitə Kolleci və Bakı Dəmiryolu Texnikumu Azərbaycan
+                            Respublikasının Nazirlər
+                            Kabinetinin 26 avqust 2002-ci il 140 saylı və Azərbaycan Respublikasının Təhsil Nazirliyinin
+                            786 saylı
+                            əmrlərinə əsasən birləşdirilərək Bakı Rabitə Kollecinin bazasında Bakı Dövlət Rabitə və
+                            Nəqliyyat Kolleci
+                            yaradılmışdır.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ NEWS SECTION ═══════════════ -->
+    <section class="section" id="news">
+        <div class="section-inner reveal">
+            <span class="section-badge" data-i18n="news_badge">Yeniliklər</span>
+            <h2 class="section-title" data-i18n="news_title">Son Xəbərlər</h2>
+            <p class="section-desc" data-i18n="news_desc">
+                Kollecimizdə baş verən ən son yeniliklər, elanlar və nailiyyətlər bir arada.
+            </p>
+            <div class="news-grid" id="news-grid">
+                <!-- News cards rendered by JS -->
+            </div>
+            <div class="news-footer">
+                <button id="btn-all-news" class="btn btn-outline" data-i18n="news_all">Bütün Xəbərlər</button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ═══════════════ ROADMAP SECTION ═══════════════ -->
+    <section class="section roadmap-section" id="roadmap">
+        <div class="section-inner reveal">
+            <span class="section-badge" data-i18n="roadmap_badge">Bələdçi</span>
+            <h2 class="section-title" data-i18n="roadmap_title">Tələbənin Yol Xəritəsi</h2>
+            <p class="section-desc" data-i18n="roadmap_desc">
+                Qəbuldan ilk dərs gününə qədər keçəcəyiniz addım-addım bələdçi.
+            </p>
+            
+            <div class="roadmap-container">
+                <div class="roadmap-line"></div>
+                <div class="roadmap-items">
+                    <div class="roadmap-item" data-step="1">
+                        <div class="roadmap-node">1</div>
+                        <div class="roadmap-content glass">
+                            <h3 data-i18n="roadmap_step1_title">İxtisas Seçimi</h3>
+                            <p data-i18n="roadmap_step1_desc">DİM tərəfindən keçirilən imtahanlarda iştirak və kollecimizə ixtisas seçimi.</p>
+                        </div>
+                    </div>
+                    <div class="roadmap-item" data-step="2">
+                        <div class="roadmap-node">2</div>
+                        <div class="roadmap-content glass">
+                            <h3 data-i18n="roadmap_step2_title">Elektron Qeydiyyat</h3>
+                            <p data-i18n="roadmap_step2_desc">Portal.edu.az vasitəsilə onlayn qeydiyyatdan keçmək və təsdiq almaq.</p>
+                        </div>
+                    </div>
+                    <div class="roadmap-item" data-step="3">
+                        <div class="roadmap-node">3</div>
+                        <div class="roadmap-content glass">
+                            <h3 data-i18n="roadmap_step3_title">Sənəd Təqdimi</h3>
+                            <p data-i18n="roadmap_step3_desc">Tələb olunan sənədlərin (atestat, foto, tibbi arayış) kollecə təqdim edilməsi.</p>
+                        </div>
+                    </div>
+                    <div class="roadmap-item" data-step="4">
+                        <div class="roadmap-node">4</div>
+                        <div class="roadmap-content glass">
+                            <h3 data-i18n="roadmap_step4_title">Tanışlıq Günü</h3>
+                            <p data-i18n="roadmap_step4_desc">Kollec korpusları, auditoriyalar və müəllim heyəti ilə yaxından tanışlıq.</p>
+                        </div>
+                    </div>
+                    <div class="roadmap-item" data-step="5">
+                        <div class="roadmap-node">5</div>
+                        <div class="roadmap-content glass">
+                            <h3 data-i18n="roadmap_step5_title">İlk Dərs Günü</h3>
+                            <p data-i18n="roadmap_step5_desc">Tələbə biletinin alınması və dərslərin rəsmi olaraq başlanması!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ STRUCTURE ═══════════════ -->
+    <section class="section section-dark" id="structure">
+        <div class="section-inner reveal">
+            <span class="section-badge" data-i18n="structure_badge">Təşkilat</span>
+            <h2 class="section-title" data-i18n="structure_title">
+                İnstitusional Struktur
+            </h2>
+            <p class="section-desc" data-i18n="structure_desc">
+                Rəhbərlik heyəti, şöbə müdirləri və fənn komissiyası sədrləri — bir
+                baxışda.
+            </p>
+            <div class="hologram-grid">
+                <!-- Leadership Card -->
+                <button class="hologram-card cat-trigger" data-category="leadership" id="btn-leadership">
+                    <div class="hologram-effect"></div>
+                    <div class="hologram-content">
+                        <div class="hologram-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                        </div>
+                        <div class="hologram-text">
+                            <span class="hologram-label" data-i18n="cat_leadership">Rəhbərlik</span>
+                            <span class="hologram-sub" data-i18n="cat_leadership_sub">Direktor və müavinlər</span>
+                        </div>
+                    </div>
+                    <div class="hologram-scanline"></div>
+                </button>
+
+                <!-- Administration Card -->
+                <button class="hologram-card cat-trigger" data-category="departments" id="btn-departments">
+                    <div class="hologram-effect"></div>
+                    <div class="hologram-content">
+                        <div class="hologram-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line></svg>
+                        </div>
+                        <div class="hologram-text">
+                            <span class="hologram-label" data-i18n="cat_departments">İnzibati İdarə Heyəti</span>
+                            <span class="hologram-sub" data-i18n="cat_departments_sub">Şöbə müdirləri və şura</span>
+                        </div>
+                    </div>
+                    <div class="hologram-scanline"></div>
+                </button>
+
+                <!-- Majors Card -->
+                <button class="hologram-card cat-trigger" data-category="majors" id="btn-majors">
+                    <div class="hologram-effect"></div>
+                    <div class="hologram-content">
+                        <div class="hologram-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+                        </div>
+                        <div class="hologram-text">
+                            <span class="hologram-label" data-i18n="cat_majors">İxtisaslar</span>
+                            <span class="hologram-sub" data-i18n="cat_majors_sub">Tədris olunan bütün sahələr</span>
+                        </div>
+                    </div>
+                    <div class="hologram-scanline"></div>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ STRUCTURE MODAL ═══ -->
+    <div class="modal-overlay" id="modal" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3 class="modal-title" id="modal-title"></h3>
+                <button class="modal-close" id="modal-close" aria-label="Bağla">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round">
+                        <line x1="18" y1="6" x2="6" y2="18" />
+                        <line x1="6" y1="6" x2="18" y2="18" />
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="staff-grid" id="grid"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════════════ PDF LIBRARY ═══════════════ -->
+    <section class="section" id="library">
+        <div class="section-inner reveal">
+            <span class="section-badge" data-i18n="library_badge">Resurslar</span>
+            <h2 class="section-title" data-i18n="library_title">
+                Elektron Kitabxana
+            </h2>
+            <p class="section-desc" data-i18n="library_desc">
+                Dərs vəsaitləri və metodik materiallar — baxış və yükləmə imkanı ilə.
+            </p>
+            <!-- Search & Category Filters -->
+            <div class="library-filter" id="library-filter">
+                <input type="text" class="library-search" id="library-search" placeholder="Kitab axtar..."
+                    data-i18n-placeholder="library_search_placeholder" />
+                <button class="filter-badge active" data-filter="all" data-i18n="filter_all">
+                    Hamısı
+                </button>
+                <button class="filter-badge" data-filter="informatika" data-i18n="filter_informatika">
+                    İnformatika
+                </button>
+                <button class="filter-badge" data-filter="azer_dili" data-i18n="filter_azer_dili">
+                    Azərbaycan dili və ədəbiyyat
+                </button>
+                <button class="filter-badge" data-filter="vaqonlar" data-i18n="filter_vaqonlar">
+                    Vaqonların konstruksiyası
+                </button>
+                <button class="filter-badge" data-filter="riyaziyyat" data-i18n="filter_riyaziyyat">
+                    Riyaziyyat
+                </button>
+                <button class="filter-badge" data-filter="tarix" data-i18n="filter_tarix">
+                    Tarix
+                </button>
+                <button class="filter-badge" data-filter="sxematexnika" data-i18n="filter_sxematexnika">
+                    Sxematexnika
+                </button>
+                <button class="filter-badge" data-filter="materialsunasliq" data-i18n="filter_materialsunasliq">
+                    Materialşünaslıq
+                </button>
+                <button class="filter-badge" data-filter="rus_dili" data-i18n="filter_rus_dili">
+                    Rus dili
+                </button>
+                <button class="filter-badge" data-filter="anbar_logistikasi" data-i18n="filter_anbar_logistikasi">
+                    Anbar logistikası
+                </button>
+                <button class="filter-badge" data-filter="xarici_dil" data-i18n="filter_xarici_dil">
+                    Xarici dil
+                </button>
+                <button class="filter-badge" data-filter="ekologiya" data-i18n="filter_ekologiya">
+                    Ekologiya
+                </button>
+                <button class="filter-badge" data-filter="fizika" data-i18n="filter_fizika">
+                    Fizika
+                </button>
+                <button class="filter-badge" data-filter="edne" data-i18n="filter_edne">
+                    EDNƏ
+                </button>
+                <button class="filter-badge" data-filter="menecment" data-i18n="filter_menecment">
+                    Menecment
+                </button>
+                <button class="filter-badge" data-filter="rabite" data-i18n="filter_rabite">
+                    Rabitə
+                </button>
+                <button class="filter-badge" data-filter="sebeke_avadanliqlari" data-i18n="filter_sebeke_avadanliqlari">
+                    Şəbəkə avadanlıqları
+                </button>
+                <button class="filter-badge" data-filter="emeyin_muhafizesi" data-i18n="filter_emeyin_muhafizesi">
+                    Əməyin mühafizəsi
+                </button>
+                <button class="filter-badge" data-filter="os" data-i18n="filter_os">
+                    Əməliyyat sistemləri
+                </button>
+                <button class="filter-badge" data-filter="transport" data-i18n="filter_transport">
+                    Nəqliyyat
+                </button>
+            </div>
+            <div class="books-grid" id="books-grid">
+                <!-- Books rendered by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ YOUTUBE LECTURES ═══════════════ -->
+    <section class="section section-dark" id="lectures">
+        <div class="section-inner reveal">
+            <span class="section-badge" data-i18n="lectures_badge">Video</span>
+            <h2 class="section-title" data-i18n="lectures_title">Videodərslər</h2>
+            <p class="section-desc" data-i18n="lectures_desc">
+                Müəllimlərimizin hazırladığı video dərslər və tədris materialları.
+            </p>
+            <div class="lecture-filter" id="lecture-filter">
+                <button class="filter-badge active" data-filter="all" data-i18n="filter_all">
+                    Hamısı
+                </button>
+                <button class="filter-badge" data-filter="tarix" data-i18n="filter_tarix">
+                    Tarix
+                </button>
+                <button class="filter-badge" data-filter="edebiyyat" data-i18n="filter_edebiyyat">
+                    Ədəbiyyat
+                </button>
+                <button class="filter-badge" data-filter="informatika" data-i18n="filter_informatika">
+                    İnformatika
+                </button>
+                <button class="filter-badge" data-filter="huquq" data-i18n="filter_huquq">
+                    Hüquq
+                </button>
+            </div>
+            <div class="lectures-grid" id="lectures-grid">
+                <!-- Lectures rendered by JS -->
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ═══════════════ GALLERY ═══════════════ -->
+    <section class="section" id="gallery">
+        <div class="section-inner reveal">
+            <span class="section-badge" data-i18n="gallery_badge">Foto</span>
+            <h2 class="section-title" data-i18n="gallery_title">Qalereya</h2>
+            <p class="section-desc" data-i18n="gallery_desc">Kollecimizin müxtəlif anlarından seçilmiş fotoşəkillər.</p>
+
+            <!-- Category Cards (Selector) -->
+            <div class="gal-cards" id="gal-cards">
+
+                <button class="gal-card" data-panel="exam">
+                    <div class="gal-card-bg"
+                        style="background: linear-gradient(145deg, #0a1f6e 0%, #1a3a9f 50%, #0d1f5c 100%);">
+                    </div>
+                    <div class="gal-card-accent" style="--accent-clr:#3b82f6"></div>
+                    <div class="gal-card-bg-icon">🎓</div>
+                    <div class="gal-card-glow"></div>
+                    <div class="gal-card-body gal-glass-body">
+                        <span class="gal-card-icon">🎓</span>
+                        <h3 class="gal-card-title" data-i18n="gallery_cat_exam">İmtahan Mühiti</h3>
+                        <p class="gal-card-count" id="gal-count-exam">0 media</p>
+                        <span class="gal-card-arrow">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </span>
+                    </div>
+                </button>
+
+                <button class="gal-card" data-panel="events">
+                    <div class="gal-card-bg"
+                        style="background: linear-gradient(145deg, #2d1060 0%, #4c1d95 50%, #1e0d70 100%);">
+                    </div>
+                    <div class="gal-card-accent" style="--accent-clr:#a855f7"></div>
+                    <div class="gal-card-bg-icon">🎉</div>
+                    <div class="gal-card-glow"></div>
+                    <div class="gal-card-body gal-glass-body">
+                        <span class="gal-card-icon">🎉</span>
+                        <h3 class="gal-card-title" data-i18n="gallery_cat_events">Tədbirlər</h3>
+                        <p class="gal-card-count" id="gal-count-events">0 media</p>
+                        <span class="gal-card-arrow">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </span>
+                    </div>
+                </button>
+
+                <button class="gal-card" data-panel="rooms">
+                    <div class="gal-card-bg"
+                        style="background: linear-gradient(145deg, #042840 0%, #0c4a6e 50%, #063350 100%);">
+                    </div>
+                    <div class="gal-card-accent" style="--accent-clr:#06b6d4"></div>
+                    <div class="gal-card-bg-icon">🏫</div>
+                    <div class="gal-card-glow"></div>
+                    <div class="gal-card-body gal-glass-body">
+                        <span class="gal-card-icon">🏫</span>
+                        <h3 class="gal-card-title" data-i18n="gallery_cat_rooms">Auditoriyalar</h3>
+                        <p class="gal-card-count" id="gal-count-rooms">0 media</p>
+                        <span class="gal-card-arrow">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </span>
+                    </div>
+                </button>
+
+                <button class="gal-card" data-panel="study">
+                    <div class="gal-card-bg"
+                        style="background: linear-gradient(145deg, #042e20 0%, #065f46 50%, #063d2c 100%);">
+                    </div>
+                    <div class="gal-card-accent" style="--accent-clr:#10b981"></div>
+                    <div class="gal-card-bg-icon">📚</div>
+                    <div class="gal-card-glow"></div>
+                    <div class="gal-card-body gal-glass-body">
+                        <span class="gal-card-icon">📚</span>
+                        <h3 class="gal-card-title" data-i18n="gallery_cat_study">Dərs Mühiti</h3>
+                        <p class="gal-card-count" id="gal-count-study">0 media</p>
+                        <span class="gal-card-arrow">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </span>
+                    </div>
+                </button>
+
+            </div><!-- /gal-cards -->
+
+        </div>
+    </section>
+
+    <!-- ═══════════════ GALLERY PANEL OVERLAY ═══════════════ -->
+    <div class="gal-panel-overlay" id="gal-panel-overlay" aria-modal="true" role="dialog">
+        <div class="gal-panel-backdrop" id="gal-panel-backdrop"></div>
+        <div class="gal-panel" id="gal-panel">
+
+            <!-- Panel Header -->
+            <div class="gal-panel-header">
+                <div class="gal-panel-title-wrap">
+                    <span class="gal-panel-icon" id="gal-panel-icon">🎓</span>
+                    <h3 class="gal-panel-title" id="gal-panel-title">İmtahan Mühiti</h3>
+                </div>
+                <button class="gal-panel-close" id="gal-panel-close" aria-label="Bağla">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                        stroke-linecap="round">
+                        <line x1="18" y1="6" x2="6" y2="18" />
+                        <line x1="6" y1="6" x2="18" y2="18" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Panel Media Grid -->
+            <div class="gal-panel-body" id="gal-panel-body">
+                <!-- Populated by JS -->
+            </div>
+
+        </div><!-- /gal-panel -->
+    </div>
+
+    <!-- Gallery Lightbox -->
+    <div class="gallery-lightbox" id="gallery-lightbox" role="dialog" aria-modal="true">
+        <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
+        <div class="lightbox-panel">
+            <!-- Close button removed per user request. Users can click backdrop to close. -->
+            <img class="lightbox-img" id="lightbox-img" src="" alt="">
+            <video class="lightbox-video" id="lightbox-video" controls playsinline></video>
+            <p class="lightbox-caption" id="lightbox-caption"></p>
+        </div>
+    </div>
+
+    <!-- ═══════════════ CONTACT HUB ═══════════════ -->
+    <section class="section section-dark" id="contact">
+        <div class="section-inner reveal">
+            <span class="section-badge" data-i18n="contact_badge">Əlaqə</span>
+            <h2 class="section-title" data-i18n="contact_title">Bizimlə Əlaqə</h2>
+            <div class="contact-grid">
+                <div class="contact-map-wrap real-map">
+                    <iframe
+                        src="https://maps.google.com/maps?q=Bak%C4%B1%20D%C3%B6vl%C3%A0t%20Rabit%C4%99%20v%C3%A0%20N%C4%9Fliyyat%20Kolleci&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                        class="map-iframe" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    <div class="abstract-map-overlay">
+                        <div class="map-coord">
+                            <span class="coord-label">LAT</span>
+                            <span class="coord-val">40.3763° N</span>
+                        </div>
+                        <div class="map-coord">
+                            <span class="coord-label">LNG</span>
+                            <span class="coord-val">49.8022° E</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-card">
+                    <form class="contact-form" id="contact-form"
+                        action="https://formsubmit.co/esgerovaleman23@gmail.com" method="POST">
+                        <input type="hidden" name="_subject" value="BDRNK Saytından Yeni Mesaj" />
+                        <input type="hidden" name="_captcha" value="false" />
+                        <input type="hidden" name="_template" value="table" />
+                        <input type="hidden" name="_next" value="" />
+                        <div class="form-group">
+                            <label for="cf-name" data-i18n="cf_name">Ad və Soyad</label>
+                            <input type="text" id="cf-name" name="ad_soyad" class="form-input" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="cf-email" data-i18n="cf_email">E-poçt</label>
+                            <input type="email" id="cf-email" name="email" class="form-input" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="cf-message" data-i18n="cf_message">Mesaj</label>
+                            <textarea id="cf-message" name="mesaj" class="form-input form-textarea" rows="4"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full" data-i18n="cf_send">
+                            Göndər
+                        </button>
+                        <p class="form-success" id="form-success" data-i18n="cf_success">
+                            Mesajınız göndərildi!
+                        </p>
+                    </form>
+                    <div class="contact-info-list">
+                        <div class="contact-info-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                            <span>Bakı, Azərbaycan</span>
+                        </div>
+                        <div class="contact-info-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.81.37 1.6.65 2.34a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.74.28 1.53.52 2.34.65a2 2 0 0 1 1.72 2.04z" />
+                            </svg>
+                            <span>(012) 431-42-28</span>
+                        </div>
+                        <div class="contact-info-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.81.37 1.6.65 2.34a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.74.28 1.53.52 2.34.65a2 2 0 0 1 1.72 2.04z" />
+                            </svg>
+                            <span>(012) 431-20-21</span>
+                        </div>
+                        <div class="contact-info-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                            <span>rabita-kolleci@mail.ru</span>
+                        </div>
+                        <div class="contact-info-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <line x1="2" y1="12" x2="22" y2="12" />
+                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                            </svg>
+                            <span>www.rabitakolleci.edu.az</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=61584384885374" target="_blank"
+                            rel="noopener noreferrer" class="social-link" aria-label="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/bdrnk__official?igsh=ejdvY3Z5emsyam0w" target="_blank"
+                            rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" />
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Section ✨ -->
+            <div class="faq-container reveal">
+                <div class="section-header">
+                    <span class="section-badge" data-i18n="faq_badge">Məlumat</span>
+                    <h3 class="faq-title" data-i18n="faq_title">
+                        Tez-tez verilən suallar
+                    </h3>
+                </div>
+                <div class="faq-grid" id="faq-accordion">
+                    <!-- FAQ Items rendered by JS -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ INFINITE MARQUEE ═══════════════ -->
+    <div class="marquee-bar" id="marquee-bar">
+        <div class="marquee-track" id="marquee-track">
+            <!-- Group 1 -->
+            <div class="marquee-panel">
+                <span data-i18n="marquee1">📢 2025/2026 tədris ili üçün qəbul elan olunub!</span>
+                <span class="marquee-sep">✦</span>
+                <span data-i18n="marquee2">🏆 Tələbələrimiz respublika olimpiadasında 1-ci yeri qazandı!</span>
+                <span class="marquee-sep">✦</span>
+                <span data-i18n="marquee3">📚 Yeni elektron kitabxana xidməti istifadəyə verildi.</span>
+                <span class="marquee-sep">✦</span>
+                <span data-i18n="marquee5">🏢 Müasir Tədris Metodları</span>
+                <span class="marquee-sep">✦</span>
+                <span data-i18n="marquee6">👨‍🏫 Təcrübəli Heyət</span>
+                <span class="marquee-sep">✦</span>
+
+                <span data-i18n="marquee8">💎 95+ İl Təcrübə</span>
+                <span class="marquee-sep">✦</span>
+                <span data-i18n="marquee9">📸 Instagram: @bdrnk__official</span>
+                <span class="marquee-sep">✦</span>
+                <span data-i18n="marquee10">👥 Facebook: bdrnk.official</span>
+            </div>
+            <!-- Group 2 (Duplicate for seamless loop) -->
+            <div class="marquee-panel">
+                <span data-i18n="marquee1">📢 2025/2026 tədris ili üçün qəbul elan olunub!</span>
+                <span class="marquee-sep">✦</span>
+                <span data-i18n="marquee2">🏆 Tələbələrimiz respublika olimpiadasında 1-ci yeri qazandı!</span>
+                <span class="marquee-sep">✦</span>
+                <span data-i18n="marquee3">📚 Yeni elektron kitabxana xidməti istifadəyə verildi.</span>
+                <span class="marquee-sep">✦</span>
+                <span data-i18n="marquee5">🏢 Müasir Tədris Metodları</span>
+                <span class="marquee-sep">✦</span>
+                <span data-i18n="marquee6">👨‍🏫 Təcrübəli Heyət</span>
+                <span class="marquee-sep">✦</span>
+
+                <span data-i18n="marquee8">💎 95+ İl Təcrübə</span>
+                <span class="marquee-sep">✦</span>
+                <span data-i18n="marquee9">📸 Instagram: @bdrnk__official</span>
+                <span class="marquee-sep">✦</span>
+                <span data-i18n="marquee10">👥 Facebook: bdrnk.official</span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- ═══════════════ FOOTER ═══════════════ -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h3 class="footer-logo">BDRNK</h3>
+                    <p class="footer-brand-desc" data-i18n="footer_desc">
+                        Bakı Dövlət Rabitə və Nəqliyyat Kolleci — gələcəyin
+                        mütəxəssislərini yetişdiririk.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <h4 data-i18n="footer_quick">Sürətli Keçidlər</h4>
+                    <a href="#about" data-i18n="nav_about">Haqqımızda</a>
+                    <a href="#structure" data-i18n="nav_structure">Struktur</a>
+                    <a href="#library" data-i18n="nav_library">Kitabxana</a>
+
+                </div>
+                <div class="footer-links">
+                    <h4 data-i18n="footer_contact">Əlaqə</h4>
+                    <span>(012) 431-42-28</span>
+                    <span>(012) 431-20-21</span>
+                    <span>rabita-kolleci@mail.ru</span>
+                    <span>www.rabitakolleci.edu.az</span>
+                    <span>Bakı, Azərbaycan</span>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footer_copyright">
+                    © 2026 BDRNK - Müəllif hüquqları qorunur. Hazırlayan: Ləman Əskərova
+                </p>
+                <div class="footer-bottom-links">
+                    <a href="https://dim.gov.az/az" target="_blank" rel="noopener noreferrer" class="dim-link"
+                        data-i18n="nav_register">
+                        Qeydiyyat (DİM)
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ═══ CUSTOM CONTEXT MENU ═══ -->
+    <div id="custom-context-menu">
+        <button class="cm-btn" id="cm-theme-toggle">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <span data-i18n="cm_theme">Açıq / Tünd Rejim</span>
+        </button>
+        <div class="cm-divider"></div>
+        <button class="cm-btn" id="cm-top">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+            <span data-i18n="cm_totop">Yuxarı Qayıt</span>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
